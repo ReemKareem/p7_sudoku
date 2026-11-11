@@ -1,0 +1,22 @@
+### Experiment 3: NN-guided vs no vs random correction
+
+5 seeds x 20 puzzles per cell, 30 givens, random baseline: 200 tries, max 3 changed cells, team seed 2024.
+
+| method | misreads | exact_recovery | solved_but_wrong | unreadable |
+|---|---|---|---|---|
+| NN-guided (UCS) | 0 | 1.000 ± 0.000 | 0.000 ± 0.000 | 0.000 ± 0.000 |
+| NN-guided (UCS, unique goal) | 0 | 1.000 ± 0.000 | 0.000 ± 0.000 | 0.000 ± 0.000 |
+| No correction | 0 | 1.000 ± 0.000 | 0.000 ± 0.000 | 0.000 ± 0.000 |
+| Random correction | 0 | 1.000 ± 0.000 | 0.000 ± 0.000 | 0.000 ± 0.000 |
+| NN-guided (UCS) | 1 | 0.840 ± 0.114 | 0.150 ± 0.117 | 0.010 ± 0.022 |
+| NN-guided (UCS, unique goal) | 1 | 0.940 ± 0.055 | 0.040 ± 0.042 | 0.020 ± 0.027 |
+| No correction | 1 | 0.000 ± 0.000 | 0.110 ± 0.108 | 0.890 ± 0.108 |
+| Random correction | 1 | 0.160 ± 0.108 | 0.620 ± 0.130 | 0.220 ± 0.076 |
+| NN-guided (UCS) | 2 | 0.660 ± 0.082 | 0.330 ± 0.076 | 0.010 ± 0.022 |
+| NN-guided (UCS, unique goal) | 2 | 0.880 ± 0.027 | 0.110 ± 0.022 | 0.010 ± 0.022 |
+| No correction | 2 | 0.000 ± 0.000 | 0.020 ± 0.045 | 0.980 ± 0.045 |
+| Random correction | 2 | 0.000 ± 0.000 | 0.310 ± 0.139 | 0.690 ± 0.139 |
+| NN-guided (UCS) | 3 | 0.490 ± 0.074 | 0.480 ± 0.091 | 0.030 ± 0.027 |
+| NN-guided (UCS, unique goal) | 3 | 0.860 ± 0.055 | 0.100 ± 0.061 | 0.040 ± 0.022 |
+| No correction | 3 | 0.000 ± 0.000 | 0.000 ± 0.000 | 1.000 ± 0.000 |
+| Random correction | 3 | 0.000 ± 0.000 | 0.090 ± 0.108 | 0.910 ± 0.108 |

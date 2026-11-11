@@ -1,0 +1,6 @@
+# tested with Python 3.12
+numpy==2.5.4
+matplotlib==3.11.2
+# optional (only for the offline dev fallback `make_data.py --source digits`)
+# scipy==1.18.1
+# scikit-learn==1.9.1
